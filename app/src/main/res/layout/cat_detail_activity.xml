@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        tools:context=".activities.CatDetailActivity">
+
+        <TextView
+            android:id="@+id/temperament"
+            android:layout_width="200dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="21dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/weight"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <TextView
+            android:id="@+id/dog_friendly"
+            android:layout_width="122dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/origin"
+            app:layout_constraintTop_toBottomOf="@+id/temperament" />
+
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="128dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="102dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="50dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/temperament"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="390dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="40sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cat_image"
+            android:layout_width="201dp"
+            android:layout_height="198dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/lifespan"
+            android:layout_width="111dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="260dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/origin" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="42dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_image" />
+
+        <ImageButton
+            android:id="@+id/favourite"
+            android:layout_width="70dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginBottom="88dp"
+            android:background="#00ffffff"
+            android:src="@android:drawable/btn_star"
+            android:text="fav"
+            app:layout_constraintBottom_toTopOf="@+id/description"
+            app:layout_constraintStart_toStartOf="@+id/cat_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="40dp"
+            android:text="Click to Favourite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cat_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wikipedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:text="For more information, please visit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lifespan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
